@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Test 01</title>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="/app/styles/styles.css">
+<!-- endinject -->
+</head>
+
+<body onload="timerGo()">
+<h1 id='date'></h1>
+<h4 id='scroller'><h4>
+<div>
+<p class='beachItem1'>Beach Towel</p>
+<p class='beachItem2'>Suntan Lotion</p>
+<p class='beachItem3'>Mask, Fins and Snorkel</p>
+<p class='beachItem4'>Boogie Board</p>
+<p id='clicker'>Click Me</p>
+</div>
+<div id ='colorDiv' style="background-color: red;">
+<p>Click the Button to change the color of this paragraph</p>
+<button id='changeCol'>Change Color</button>
+</div>
+<div>
+<p>1. How Do You Define an Angular JS Application?
+<br/>An Angular Js application is any web app that uses the Javascript frame-work Angular JS. The framework allows manipulation of HTML elements, easier data binding, and many other features to write less Javascript and create a better user experience.</p>
+
+<p>2.What is a Controller?
+<br/>A controller is the connection between the view (what a user sees) and the model (the underlying data and logic).</p>
+
+<p>3. What does ng-model do?
+<br/>Ng-model is used for two way data binding. When an element has the ng-model attribute Angular constantly checks for changes from the view or from the model and updates the other accordingly.</p>
+
+<p>4. What is interpolation mark-up?
+<br/>Interpolation markup is one way that Angular inserts data from the model into the view. Angular uses double curly brackets {{}} for interpolation markup. Which means that the expression inside the brackets is passed to the controller. For example the expression {{2 + 2}} will be represented on the view as 4. </p>
+
+<p>5. What is $scope?
+<br/>$scope is an object that connects the controller and the view, setting the limit on what part of the application the controller has access to. It has access to both the view and the controller.</p>
+
+<p>6. What is Dependency Injection?
+<br/>Dependency injection is the principle that one object can require the code of another object in order to run. In angular a controller can have multiple dependicies and can inject them by calling for them after the controller's name is stated.</p>
+
+<p>7. What is Two-Way Binding?
+<br/>Two way binding means that a user can update data on the view and those changes will be reflected in the underlying model and changes made in the opposite direction will immediately be visible.</p>
+
+<p>8. What is 'Controller As' Syntax?
+<br/>Controller As is another way of writing Angular controllers. It came out with Angular 1.2 and uses 'this' instead of $scope, often replacing it with the variable vm (view model). It helps to keep code more readable and simple.</p>
+
+<p>9. What is MV* Architecture?
+<br/>MV* architecture is a design principle that splits up the process of getting data from a database to the client into three parts. The client/user is the view, the server between the database and the client is the controller, and the database is the model. Angular uses this same architecture principle to define the different layers of a web application. The view is what the user actually sees, the model is the underlying data and logic of the app, and the controller is what connects the two.</p>
+
+<p>10. What is the Difference Between a Service and a Factory?
+<br/>Both a service and a factory can create objects that can be passed to a controller or other services/factories. Both store values that can be called elsewhere. A service creates a new instance of an object while a factory can return an object, a function, or any type of value. A service needs the 'new' constructor to access stored values whereas a factory's object doesn't need 'new' to access stored values. Overall, they are both very similar, with subtle differences.</p>
+</div>
+
+    
+
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+
+<!-- inject:js -->
+<script src="/app/app.js"></script>
+<!-- endinject -->
+</body>
+</html>
